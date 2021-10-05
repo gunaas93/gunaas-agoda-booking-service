@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "6fbae6c2-50ae-4242-baf9-ce32bde17d7a",
+		"name": "Agoda",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Bookings By Customer Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerIds\" : [\"f57e85f3-b496-49fb-9093-d54db5b9fc6e\",\n\"f9908c8c-bc9f-444e-8c36-e746f9914f73\",\n\"f5837db5-b938-41ef-9807-63e9da4b30e9\",\n\"7b9bdc2b-0904-4e8b-ad42-1d2b4061dd87\",\n\"a9cb4550-093a-4e67-9a51-b871b9c5ab02\",\n\"c520557b-865e-4843-9efd-be7b82e1377e\",\n\"e682fcbf-58a3-4f0d-85bb-f2a33e06e4b9\",\n\"b5605f09-124e-4b87-8548-fe23d04c8f6a\",\n\"96946af1-555c-4e3e-a688-e1429e1cd2b9\",\n\"5de49c9a-684c-4cd3-a44b-6880b8ae0a08\",\n\"479e0eae-7fc8-4237-9eaf-33d29257a57d\",\n\"14865f41-a575-45e8-8421-befafc0559d8\",\n\"3c740ec8-3ad9-4592-bc14-48c8d6b2fdb3\",\n\"55151678-582e-408b-a129-cae931d233b7\",\n\"1e410bfa-b390-47ea-a5c6-ec404d4e5bf3\",\n\"8205ae12-7607-49d7-b603-0a9359c366b8\",\n\"065e7bbf-0912-481f-8c8c-861df66a1d03\",\n\"27957e87-df12-4c60-917e-4fd2b2ee670c\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/bookingmanager/bookingsummary/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bookingmanager",
+						"bookingsummary",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Load Bookings",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/bookingmanager/load",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bookingmanager",
+						"load"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bookings By Hotel Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"SGD\" : 2.22,\n    \"THB\" : 4.35\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/bookingmanager/bookingsummary/hotel/1000336",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"bookingmanager",
+						"bookingsummary",
+						"hotel",
+						"1000336"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
